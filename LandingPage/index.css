@@ -1,0 +1,1257 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif !important;
+    text-decoration: none !important;
+}
+
+
+.navbar {
+    height: 100px;
+    background: #409945;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.navbar_left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.navbar_left .btn_lang {
+    background: #409945;
+    width: 65px;
+    height: 32px;
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    outline: none !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn_lang img{
+    color: #fff;
+}
+
+.bx {
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+.close_icon{
+    display: none;
+}
+
+.menuItem {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 89px;
+    height: 40px;
+    background: #409945;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.menuItem:hover {
+    background-color: #FFFFFF;
+    color: #409945;
+    transition: all .5s ease-in-out;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+.humburger_menu{
+   display: none;
+}
+.hamburger {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 36px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .humburger_menu{
+        display: block;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+}
+.menu_icon, .close_icon{
+    font-size: 30px;
+}
+
+
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #409945;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    height: 400px;
+    display: grid;
+    justify-content: center;
+}
+.showMenu {
+    transform: translateY(100px);
+}
+
+.dropdown {
+    position: absolute;
+    width: 115px;
+    height: 125px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    top: 50px;
+    left: 50%;
+    display: grid;
+    padding: 22px 14px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #23222B;
+    margin-bottom: 14px;
+    text-decoration: none;
+    position: relative;
+}
+
+.dropdown a::after {
+    width: 10px;
+    height: 10px;
+    content: "";
+    display: inline-block;
+    background-color: #0129FF;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0;
+}
+
+.dropdown a:hover::after {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.show {
+    transform: translateY(0rem);
+    visibility: visible;
+    opacity: 1;
+}
+
+.arrow {
+    transform: rotate(180deg);
+    transition: 0.2s ease;
+}
+
+.navbar-collapse {
+    flex-basis: unset;
+    flex-grow: unset;
+    gap: 20px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 89px;
+    height: 40px;
+    background: #409945;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover {
+    background-color: #FFFFFF;
+    color: #409945;
+    transition: all .5s ease-in-out;
+}
+
+.nav-link-quit:hover {
+    color: #409945;
+}
+
+.nav-link-quit {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #409945;
+    width: 68px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+/* // section-1 */
+
+#login {
+    position: relative;
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+.header_menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+}
+
+
+
+.left_section .title {
+    width: 110%;
+}
+
+.left_section .title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    color: #23222B;
+    margin-bottom: 5px;
+}
+
+.left_section .title span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #23222B;
+    margin-bottom: 16px;
+}
+
+.left_section .title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #23222B;
+}
+
+.middle_section {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    z-index: 99;
+}
+
+.middle_section img {
+    transform: translateX(-50%);
+}
+
+.right_section form {
+    margin-top: 50px;
+    width: 470px;
+    height: 389px;
+    background: #FFFFFF;
+    border: 5px solid #B6D9BA;
+    box-shadow: 0px 50px 40px -35px rgba(17, 66, 20, 0.46);
+    border-radius: 20px;
+    padding: 45px 95px 39px 95px;
+    z-index: 99;
+    position: relative;
+}
+
+.bg_image_section {
+    background-image: url("../Images/Frame\ \(1\).png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+}
+
+form .form_group {
+    display: block;
+    text-align: center;
+    
+}
+.modal_svg img{
+    z-index: 9999;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    object-fit: contain;
+}
+
+form .form_group .form_title h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #23222B;
+    margin-bottom: 34px;
+}
+
+.form_control input {
+    height: 50px;
+    border: 1px solid #E1E7EC;
+    border-radius: 10px;
+    width: 100%;
+    padding: 16.5px 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23222B;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form_control input:focus {
+    border: 1px solid #409945;
+}
+
+.form_control input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C1CCDC;
+}
+
+.form_group .form_btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C1CCDC;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    outline: none;
+    box-shadow: inset;
+    border: none;
+    text-decoration: none;
+}
+
+.form_group .form_btn:hover {
+    background-color: #409945;
+    color: #FFFFFF;
+    transition: all .5s ease-in-out;
+}
+
+.form_group .form_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #68748A;
+    text-decoration: none;
+}
+
+.form_group .form_link:hover {
+    color: #409945;
+}
+
+
+
+
+
+#course {
+    background-color: #F0FAF1;
+    height: 90vh;
+    width: 100%;
+    padding-top: 80px;
+    position: relative;
+}
+
+.course_title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.course_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 49px;
+}
+
+
+
+
+
+#course .card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px -6px #ADD2B0;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 210px;
+    padding: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card .card_img {
+    margin-bottom: 26px;
+}
+
+#course .card .card_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #23222B;
+    margin-bottom: 8px;
+}
+
+#course .card .card_title span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23222B;
+}
+
+.cuorse_btn button {
+    width: 100%;
+    height: 60px;
+    background: #FFC329;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuorse_btn button img {
+    margin-left: 10px;
+}
+
+#course .bg_image_course img {
+    width: 100%;
+    height: 440px;
+    object-fit: contain;
+}
+
+#game_carousel {
+    background-color: #409945;
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+}
+
+.game_carousel {
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
+
+#game_carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game_carousel {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.carousel_title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#our_pride {
+    background-color: #F0FAF1;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.our_pride img {
+    width: 100%;
+    object-fit: contain;
+    padding-bottom: 100px;
+}
+
+.our_pride_title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.box {
+    width: 380px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.box .box_img img {
+    border-radius: 15px;
+    object-fit: contain;
+    width: 380px;
+    height: 400px;
+    margin-bottom: 16px;
+    margin-left: 0;
+}
+
+.box_text h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: #23222B;
+}
+
+.box_text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #23222B;
+    margin-bottom: 12px;
+}
+
+.box_text .box_score {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.box_score span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #23222B;
+}
+
+#learning_game .learnig_section {
+    height: 50vh;
+    width: 100%;
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.learning_game img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#learning_game .box_img1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #6EDEEC;
+    border-radius: 15px;
+    margin-bottom: 18px;
+}
+
+#learning_game .box_img2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #FFDD64;
+    border-radius: 15px;
+    margin-bottom: 18px;
+}
+
+#learning_game .box_img3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #77DA7C;
+    border-radius: 15px;
+    margin-bottom: 18px;
+}
+
+#learning_game .box_img img {
+    width: 196px;
+    height: 196px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#learning_game .box_score span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #23222B;
+}
+
+#learning_game .box_text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #23222B;
+    margin-bottom: 12px;
+}
+#learning_game .box_text span br{
+    display: none;
+}
+
+#slider2 .slider_top_image img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#slider2 .slider_section {
+    background-color: #FFF5D2;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#slider2 .slider_title h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #23222B;
+}
+
+.swiper-wrapper {
+    padding-left: initial;
+    margin: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 80%;
+    border-right: 1px solid black;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#info .info_section_img img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: -250px;
+}
+
+#info .info_section {
+    height: 80vh;
+    width: 100%;
+    background-image: url("../Images/Mask\ group\ \(1\).png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.info_about {
+    width: 100%;
+    height: 400px;
+    background: #A79CE8;
+    border: 7px solid #8376CB;
+    border-radius: 40px;
+    background-image: url("../Images/bottom_bg4.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 41px 50px;
+    position: relative;
+}
+
+.info_lists ul {
+    padding-left: 0;
+}
+
+.info_lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_lists ul li {
+    list-style: none;
+    margin-bottom: 26px;
+    gap: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.info_right img {
+    position: absolute;
+    right: 6%;
+    top: -24%;
+}
+
+.footer_section {
+    height: 340px;
+    width: 100%;
+}
+
+.footer_top {
+    border-top: 1px solid #EAEEF3;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.list_foter {
+    float: left;
+    margin-right: auto;
+}
+
+.list_foter span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 17px;
+    color: #23222B;
+
+}
+
+.list_foter ul {
+    padding-left: 0;
+    margin-top: 24px;
+}
+
+.list_foter ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    color: #23222B;
+    margin-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.list_foter ul li a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    color: #23222B;
+    margin-bottom: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.list_foter ul li a img {
+    margin-right: 14px;
+    list-style: none;
+}
+
+.footer_bottom {
+    border-top: 1px solid #EAEEF3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.left_footer_bottom {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left_footer_bottom span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #68748A;
+}
+
+.right_footer_bottom img {
+    object-fit: contain;
+}
+
+
+
+
+@media (max-width: 1400px) {
+    #course .bg_image_course img {
+        height: 350px;
+    }
+
+    #info .info_section_img img {
+        width: 100%;
+        object-fit: contain;
+        margin-top: -200px;
+    }
+
+    .info_right img {
+        position: absolute;
+        right: 1%;
+        top: -24%;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .middle_section {
+        position: absolute;
+        left: 45%;
+        top: 19%;
+        z-index: 99;
+    }
+    #course .bg_image_course img {
+        height: 585px;
+    }
+    .our_pride img {
+        width: 100%;
+        object-fit: contain;
+        padding-bottom: 100px;
+        margin-top: -1px;
+    }
+    .box {
+        width: unset;
+    }
+    .box .box_img img {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+    .middle_section img {
+        display: none;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 42px;
+    }
+    .left_section .title span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 30px;
+    }
+    #course {
+        height: 100vh;
+    }
+    #course .bg_image_course img {
+        height: 375px;
+    }
+    #our_pride {
+        height: 100%;
+    }
+    .box{
+        margin-bottom: 30px;
+    }
+    .box_text{
+        text-align: center;
+    }
+    .box_text .box_score {
+        justify-content: center;
+    }
+    #learning_game .learnig_section {
+        height: unset;
+    }
+    #info .info_section {
+        height: 65vh;
+        width: 100%;
+        background-image: url(../Images/Mask\ group\ \(1\).png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 100px;
+    }
+    #info .info_section_img img {
+        margin-top: -190px;
+    }
+}
+@media (max-width: 992px) {
+    .header_menu{
+        display: grid;
+    }
+    .middle_section {
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        z-index: 99;
+    }
+    .middle_section img {
+        display: block;
+    }
+    .middle_section img {
+        transform: translateX(20%);
+    }
+    .right_section{
+        transform: translateX(50%);
+        margin-top: 50px;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 42px;
+    }
+    .left_section .title span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 30px;
+    }
+    .navbar-nav{
+        display: -webkit-inline-box;
+    }
+    #course {
+        height: 139ch;
+    }
+    #learning_game .box_img1 {
+        width: 380px;
+        height: 210px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #learning_game .box_img2 {
+        width: 380px;
+        height: 210px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #learning_game .box_img3 {
+        width: 380px;
+        height: 210px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    #learning_game .box_text span br{
+        display: block;
+    }
+    #info .info_section_img img {
+        margin-top: -160px;
+    }
+    .info_lists ul li {
+        margin-bottom: 20px;
+        gap: 24px;
+        font-size: 20px;
+    }
+    
+}
+@media (max-width: 768px) {
+    #login {
+        height: calc(100vh - 20px);
+    }
+    .header_menu{
+        display: grid;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .middle_section {
+        position: absolute;
+        left: 40%;
+        top: 14%;
+        z-index: 99;
+    }
+    .right_section{
+        transform: translateX(26%);
+        margin-top: 150px;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 36px;
+    }
+    .left_section .title span {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 26px;
+    }
+    .course_title p br{
+        display: none;
+    }
+    .course_title h1{
+        font-size: 30px;
+    }
+    #course .bg_image_course img {
+        height: 354px;
+    }
+    .carousel_title h1 {
+        font-size: 30px;
+    }
+    .our_pride_title h1 {
+        font-size: 30px;
+    }
+    .box_text h6 {
+        font-size: 22px;
+    }
+    .box_text p {
+        font-size: 18px;
+    }
+    .box_score span {
+        font-size: 16px;
+    }
+    #slider2 .slider_title h1 {
+        font-size: 30px;
+    }
+    #info .info_section_img img {
+        margin-top: -130px;
+    }
+    #info .info_section {
+        height: 80vh
+    }
+    .info_about {
+        height: 600px;
+    }
+    .info_right img {
+        position: absolute;
+        right: 1%;
+        top: 54%;
+    }
+    .left_footer_bottom {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .card_registration1{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+    .card_registration2{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+    .card_registration3{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 660px){
+    .middle_section img {
+       display: none;
+    }
+    .left_section .title {
+        text-align: center;
+        width: unset;
+    }
+    .right_section{
+        transform: unset;
+        margin-top: 40px;
+    }
+    .header_menu {
+        display: grid;
+        justify-content: center;
+    }
+    #course .bg_image_course img {
+        height: 300px;
+    }
+    .cuorse_btn button {
+        width: 200px;
+    }
+    .game_carousel {
+        background-position: center;
+    }
+    .game_carousel {
+        padding-top: 0px;
+    }
+    #info .info_section_img img {
+        margin-top: -115px;
+    }
+}
+
+
+
+  
+.swiper {
+    padding-bottom: 60px !important;
+    margin-top: 100px;
+}
+.swiper .swiper-wrapper {
+    align-items: center;
+    background-color: unset;
+}
+.swiper-slide img{
+    width: 660px !important;
+    height: 446px !important;
+    transition: 0.2s;
+    background-color: unset;
+}
+.swiper-slide{
+    background-color: unset;
+    width: 660px;
+    height: 446px;
+    transition: 0.2s;
+    border: none;
+}
+
+.pagination {
+    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 100;
+}
+  
+.pagination span{
+    font-size: 0;
+    opacity: 1;
+    margin: 0px 6px !important;
+    border: 1px solid #9e0b0b;
+}
+.pagination span.swiper-pagination-bullet-active {
+    background-color: transparent;
+    transform: scale(1.5);
+}

@@ -1,0 +1,197 @@
+.navbar_register {
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.main_registration {
+    height: calc(100vh - 151px);
+    padding-top: 50px;
+    background: #F4F5F7;
+}
+.footer_bottom{
+    border-top: none !important;
+}
+
+.card_registration1 {
+    background: #61CB67;
+    border-radius: 15px;
+    height: 370px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card_registration2 {
+    background: #2CCBDE;
+    border-radius: 15px;
+    height: 370px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+.card_registration2 .regis_image img{
+    margin-top: 18px;
+    object-fit: contain;
+} 
+.card_registration1 .regis_image img{
+    margin-top: 13px;
+    object-fit: contain;
+} 
+
+.card_registration3 {
+    background: #F9C747;
+    border-radius: 15px;
+    height: 370px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.regis_name h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #23222B;
+    margin-top: 1rem;
+}
+
+.regis_title p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #23222B;
+    margin-bottom: 21px;
+
+}
+.regis_btn1, .regis_btn2, .regis_btn3{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regis_btn1 a{
+    width: 268.52px;
+    height: 50px;
+    background: #28A82F;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.regis_btn2 a{
+    width: 268.52px;
+    height: 50px;
+    background: #00A1B4;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+.regis_btn3 a{
+    width: 268.52px;
+    height: 50px;
+    background: #E39C11;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    
+}
+
+@media (max-width: 1200px){
+    .card_registration1{
+        margin-bottom: 20px;
+    }
+    .card_registration2{
+        margin-bottom: 20px;
+    }
+    .card_registration3{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 992px){
+    .card_registration1{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+    .card_registration2{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+    .card_registration3{
+        width: 313.27px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px){
+    .main_registration {
+        padding-top: 80px;
+        height: calc(100vh - 90px);
+    }
+    .card_registration1{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+    }
+    .card_registration2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+    }
+    .card_registration3{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 200px;
+    }
+}
