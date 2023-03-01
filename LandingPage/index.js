@@ -1,33 +1,33 @@
-const Swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 50,
-  loop: true,
-  grabCursor: true,
-  centeredSlides: true,
-  slideActiveClass: "active",
-  pagination: {
-      el: ".pagination",
-      clickable: true
-  },
-  autoplay: {
-      enabled: true,
-      delay: 5000
-  },
-  // Media :{
-  //     breakpoints: {
-  //     // when window width is >= 320px
-  //     320: {
-  //         slidesPerView: 2,
-  //         spaceBetween: 20
-  //     },
-  //     // when window width is >= 480px
-  //     480: {
-  //         slidesPerView: 4,
-  //         spaceBetween: 30
-  //     },
-  //     }
-  // }
-  });
+// const Swiper = new Swiper(".swiper", {
+//   slidesPerView: 3,
+//   spaceBetween: 50,
+//   loop: true,
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slideActiveClass: "active",
+//   pagination: {
+//       el: ".pagination",
+//       clickable: true
+//   },
+//   autoplay: {
+//       enabled: true,
+//       delay: 5000
+//   },
+//   // Media :{
+//   //     breakpoints: {
+//   //     // when window width is >= 320px
+//   //     320: {
+//   //         slidesPerView: 2,
+//   //         spaceBetween: 20
+//   //     },
+//   //     // when window width is >= 480px
+//   //     480: {
+//   //         slidesPerView: 4,
+//   //         spaceBetween: 30
+//   //     },
+//   //     }
+//   // }
+//   });
 
  
 
@@ -57,17 +57,23 @@ hamburger.addEventListener("click", toggleMenu);
 
 
 
-let slideIndex = 1;
-showSlides(slideIndex);
+// let slideIndex = 1;
+// showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
 
+
+
+
+const a = 78
+const res = a.toString("")
+console.log(res, "teskari son")

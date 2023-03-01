@@ -523,3 +523,112 @@ form .form_group .form_title h4 {
 }
 
 
+
+@media (max-width: 1200px) {
+    .middle_section img {
+        display: none;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 42px;
+    }
+    .left_section .title span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 30px;
+    }
+}
+@media (max-width: 992px) {
+    /* .header_menu{
+        display: grid;
+    } */
+    .main_login .middle_section {
+        position: absolute;
+        left: 50%;
+        top: 4%;
+        z-index: 99;
+    }
+    .main_login .middle_section img {
+        display: none;
+    }
+    .main_login .middle_section img {
+        transform: translateX(20%);
+    }
+    .main_login .right_section{
+        transform: translateX(0%);
+        margin-top: 50px;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 42px;
+    }
+    .left_section .title span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 30px;
+    }
+    .navbar-nav{
+        display: -webkit-inline-box;
+    }
+}
+@media (max-width: 768px) {
+    #login {
+        height: calc(100vh - 20px);
+    }
+    .header_menu{
+        display: grid;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .middle_section {
+        position: absolute;
+        left: 40%;
+        top: 14%;
+        z-index: 99;
+    }
+    .right_section{
+        transform: translateX(26%);
+        margin-top: 150px;
+    }
+    .left_section{
+        margin-top: 50px;
+    }
+    .left_section .title h1 {
+        font-size: 36px;
+    }
+    .left_section .title span {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .left_section .title p {
+        font-size: 26px;
+    }
+}
+@media (max-width: 660px){
+    .middle_section img {
+       display: none;
+    }
+    .left_section .title {
+        text-align: center;
+        width: unset;
+    }
+    .right_section{
+        transform: unset;
+        margin-top: 40px;
+    }
+    .header_menu {
+        display: grid;
+        justify-content: center;
+    }
+    
+}
+

@@ -106,6 +106,10 @@ body {
     }
     
 }
+
+
+
+
 .menu_icon, .close_icon{
     font-size: 30px;
 }
@@ -338,6 +342,7 @@ body {
     height: 100%;
     width: 100%;
     background-size: contain;
+    z-index: -1;
 }
 
 form .form_group {
@@ -940,7 +945,11 @@ form .form_group .form_title h4 {
         top: -24%;
     }
 }
-
+@media (min-width: 1400px) {
+    #course{
+        height: 109vh;
+    }
+}
 
 @media (max-width: 1400px) {
     .middle_section {
@@ -949,8 +958,11 @@ form .form_group .form_title h4 {
         top: 19%;
         z-index: 99;
     }
+    #course{
+        height: 120vh;
+    }
     #course .bg_image_course img {
-        height: 585px;
+        height: 580px;
     }
     .our_pride img {
         width: 100%;
@@ -963,6 +975,11 @@ form .form_group .form_title h4 {
     }
     .box .box_img img {
         width: 100%;
+    }
+    #info .info_section_img img {
+        width: 100%;
+        object-fit: contain;
+        margin-top: -180px;
     }
 }
 @media (max-width: 1200px) {
@@ -983,7 +1000,7 @@ form .form_group .form_title h4 {
         font-size: 30px;
     }
     #course {
-        height: 100vh;
+        height: 135vh;
     }
     #course .bg_image_course img {
         height: 375px;
@@ -1013,16 +1030,18 @@ form .form_group .form_title h4 {
         padding-top: 100px;
     }
     #info .info_section_img img {
-        margin-top: -190px;
+        margin-top: -160px;
     }
 }
 @media (max-width: 992px) {
+    #login{
+        height: 120vh;
+    }
     .header_menu{
         display: grid;
     }
     .middle_section {
         position: absolute;
-        left: 50%;
         top: 4%;
         z-index: 99;
     }
@@ -1030,7 +1049,7 @@ form .form_group .form_title h4 {
         display: block;
     }
     .middle_section img {
-        transform: translateX(20%);
+        transform: translateX(0%);
     }
     .right_section{
         transform: translateX(50%);
@@ -1084,11 +1103,14 @@ form .form_group .form_title h4 {
         gap: 24px;
         font-size: 20px;
     }
+    #course .bg_image_course img {
+        height: 355px;
+    }
     
 }
 @media (max-width: 768px) {
     #login {
-        height: calc(100vh - 20px);
+        height: calc(135vh);
     }
     .header_menu{
         display: grid;
@@ -1150,7 +1172,7 @@ form .form_group .form_title h4 {
         margin-top: -130px;
     }
     #info .info_section {
-        height: 80vh
+        height: 130vh
     }
     .info_about {
         height: 600px;
@@ -1209,9 +1231,74 @@ form .form_group .form_title h4 {
     #info .info_section_img img {
         margin-top: -115px;
     }
+    .info_about {
+        padding: 25px 20px;
+    }
 }
 
-
+@media (max-width: 400px) {
+    #course {
+        height: 241.5ch;
+    }
+    .right_section form {
+        width: 350px;
+        height: 370px;
+        background: #FFFFFF;
+        border: 5px solid #B6D9BA;
+        box-shadow: 0px 50px 40px -35px rgb(17 66 20 / 46%);
+        border-radius: 20px;
+        padding: 25px 50px 39px 50px;
+        z-index: 99;
+        position: relative;
+    }
+    #info .info_section_img img {
+        margin-top: -80px;
+    }
+    .footer_bottom {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .right_footer_bottom{
+        justify-content: center;
+        display: flex;
+        margin: 20px 0;
+    }
+    .swiper-slide img {
+        width: 340px !important;
+        height: 340px !important;
+        transition: 0.2s;
+        background-color: unset;
+    }
+    #info .info_section {
+        height: 100vh;
+    }
+    .info_lists ul li {
+        margin-bottom: 20px;
+        gap: 24px;
+        font-size: 16px;
+    }
+    .info_lists ul li img{
+        width: 12%;
+    }
+    .info_right img {
+        position: absolute;
+        right: 1%;
+        top: 62%;
+        width: 60%;
+    }
+    .list_foter {
+        margin-right: auto;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        float: unset;
+    }
+    .regis_btn1 a {
+        width: 150.52px;
+    }
+}
+ /* // shu joyidan davom etadi */
 
   
 .swiper {
