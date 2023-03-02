@@ -1303,24 +1303,62 @@ form .form_group .form_title h4 {
   
 .swiper {
     padding-bottom: 60px !important;
+}
+.slider__container{
     margin-top: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+
 }
-.swiper .swiper-wrapper {
-    align-items: center;
-    background-color: unset;
+.slider__box{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 2rem) / var(--per-view));
+    grid-gap: 4rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    transition: 5s;
+
 }
-.swiper-slide img{
+.slider__item{
+    width: 100%;
+
+}
+.slider__item img{
     width: 660px !important;
     height: 446px !important;
-    transition: 0.2s;
-    background-color: unset;
+    object-fit: cover;
+    cursor: pointer;
 }
-.swiper-slide{
-    background-color: unset;
-    width: 660px;
-    height: 446px;
-    transition: 0.2s;
-    border: none;
+.slider__container1{
+    margin-top: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+
+}
+.slider__box1{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 1rem) / var(--per-view));
+    grid-gap: 9rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    transition: 5s;
+
+}
+.slider__item1{
+    width: 100%;
+
+}
+.slider__item1 img{
+    width: 660px !important;
+    height: 446px !important;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .pagination {
@@ -1341,4 +1379,45 @@ form .form_group .form_title h4 {
 .pagination span.swiper-pagination-bullet-active {
     background-color: transparent;
     transform: scale(1.5);
+}
+
+@media (max-width: 786px) {
+    .slider__box{
+        grid-auto-columns: 100%;
+    }
+    .slider__box1{
+        grid-auto-columns: 100%;
+    }
+}
+
+@media (max-width: 1400px){
+    .slider__container{
+        width: 1000px !important;
+    }
+    .slider__box{
+        --per-view: 3;
+    }
+}
+@media (max-width: 992px){
+    .slider__box{
+        --per-view: 1 !important;
+        transition: all 10s ease 0s;
+        column-gap: 5rem;
+    }
+    .slider__item img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .slider__box{
+        --per-view: 1 !important;
+        transition: all 10s ease 0s;
+    }
+    .slider__item img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

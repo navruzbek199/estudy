@@ -56,6 +56,44 @@ hamburger.addEventListener("click", toggleMenu);
 
 
 
+const sliderBox = document.querySelector('.slider__box')
+const sliderItems = document.querySelectorAll(".slider__item")
+const itemLength = sliderItems.length 
+const preView = 3
+
+let totalScroll = 0;
+sliderBox.style.setProperty('--per-view', preView)
+
+for (let i = 0; i < preView; i++) {
+    sliderBox.insertAdjacentHTML('beforeend', sliderItems[i].outerHTML)         
+}
+
+
+let autoScroll = setInterval(scrolling, 1000);
+
+
+function scrolling () {
+    totalScroll++
+
+    if(itemLength + 1 === totalScroll ){
+        totalScroll = 1;
+        sliderBox.style.transition = '0s'
+
+        sliderBox.style.left = '0px';
+        clearInterval(autoScroll)
+        autoScroll = setInterval(scrolling, 1000)
+    }
+    const widthEl = document.querySelector('.slider__box > :first-child').offsetWidth + 24;
+    console.log(widthEl);
+    sliderBox.style.left = `-${totalScroll * widthEl}px`
+    sliderBox.style.transition = '.3s'
+    
+
+
+
+}
+
+
 
 // let slideIndex = 1;
 // showSlides(slideIndex);

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./index.css">
+        <title>Main page</title>
+    </head>
+    <body>
+        <div class="main_page">
+            <nav class="navbar navbar-expand-lg navbar_register">
+                <div class="container-xl">
+                    <div class="navbar_left">
+                        <a class="navbar-brand" href="/LandingPage/index.html">
+                            <img src="../Images/logo2.svg" alt="brand">
+                        </a>
+                        <div class="btn_lang" id="btn_lang">
+                            RU
+                            <!-- <i class="bx bx-chevron-down" id="arrow"></i> -->
+                            <img
+                                class="bx bx-chevron-down"
+                                src="../Images/icon_lang.svg"
+                                id="arrow"
+                                alt="arrow"
+                            >
+                        </div>
+                        <div class="dropdown" id="dropdown_lang">
+                            <a href="#ru">
+                                Русский
+                            </a>
+                            <a href="#uz">
+                                Узбек тили
+                            </a>
+                            <a href="#en">
+                                O`zbek tili
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-nav navbar_right">
+                        <a class="nav_smile" href="#">
+                            <span class="icon">
+                                <img src="../Images/Frame 2029.svg" alt="">
+                            </span>
+                            <p>Квесты</p>
+                            <span class="number">294</span>
+                        </a>
+                        <a class="nav_smile" href="#">
+                            <span class="icon">
+                                <img src="../Images/Frame 34138.svg" alt="">
+                            </span>
+                            <p>Монеты</p>
+                            <span class="number">294</span>
+                        </a>
+                        <a class="nav_smile" href="#">
+                            <span class="icon">
+                                <img src="../Images/ic.svg" alt="">
+                            </span>
+                            <p>Достижения</p>
+                            <span class="number">12</span>
+                        </a>
+                        <div class="profile" id="profile">
+                            <img src="../Images/Frame 1.svg" alt="profile_icon">
+                            <img
+                                class="bx bx-chevron-down"
+                                src="../Images/profile_icon.svg"
+                                id="arrow1"
+                                alt="arrow"
+                            >
+                            <div class="dropdown_profile" id="dropdown_profile">
+                                <a href="#ru">
+                                    Русский
+                                </a>
+                                <a href="#uz">
+                                    Узбек тили
+                                </a>
+                                <a href="#en">
+                                    O`zbek tili
+                                </a>
+                            </div>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="humburger_menu">
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars menu_icon"></i>
+                        <i class="fa-solid fa-x close_icon"></i>
+                    </div>
+                    <div class="menu">
+                        <a class="menuItem" href="#">Квесты</a>
+                        <a class="menuItem" href="#">Монеты</a>
+                        <a class="menuItem" href="#">Достижения</a>
+                    </div>
+                </div>
+            </nav>
+            <main class="main_page_section">
+                <div class="container-xl">
+                    <section class="my_task">
+                        <div class="title">
+                            <h2>Мои текщие задачи</h2>
+                            <a href="#">Все задачи <img src="../Images/Arrow - Right.svg" alt="icon_right"></a>
+                        </div>
+                        <div class="my_task_card">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="card_task">
+                                        <div class="card_img">
+                                            <img src="../Images/химия2.png" alt="">
+                                        </div>
+                                        <div class="subject_name">
+                                            <p>Математика</p>
+                                        </div>
+                                        <div class="subject_progress">
+                                            <div class="progress_title">
+                                                <span>Пройдено </span>
+                                                <span>0 / 120</span>
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 0%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="card_task">
+                                        <div class="card_img">
+                                            <img src="../Images/химия2.png" alt="">
+                                        </div>
+                                        <div class="subject_name">
+                                            <p>Математика</p>
+                                        </div>
+                                        <div class="subject_progress">
+                                            <div class="progress_title">
+                                                <span>Пройдено </span>
+                                                <span>0 / 120</span>
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 25%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="card_task">
+                                        <div class="card_img">
+                                            <img src="../Images/химия2.png" alt="">
+                                        </div>
+                                        <div class="subject_name">
+                                            <p>Математика</p>
+                                        </div>
+                                        <div class="subject_progress">
+                                            <div class="progress_title">
+                                                <span>Пройдено </span>
+                                                <span>0 / 120</span>
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 50%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="card_task">
+                                        <div class="card_img">
+                                            <img src="../Images/химия2.png" alt="">
+                                        </div>
+                                        <div class="subject_name">
+                                            <p>Математика</p>
+                                        </div>
+                                        <div class="subject_progress">
+                                            <div class="progress_title">
+                                                <span>Пройдено </span>
+                                                <span>0 / 120</span>
+                                            </div>
+                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar" style="width: 78%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="my_predmet">
+                        <div class="title">
+                            <h2>Мои предметы</h2>
+                            <a href="#">Смотреть предметы<img src="../Images/Arrow - Right.svg" alt="icon_right"></a>
+                        </div>
+                        <div class="my_predmet_card">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="pedmet_card">
+                                        <div class="pedmet_card_left">
+                                            <h6>Математика</h6>
+                                            <p>Пройдено карточек: 10 / 320</p>
+                                        </div>
+                                        <div class="pedmet_card_right">
+                                            <img src="../Images/читает(матиматика).svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="pedmet_card">
+                                        <div class="pedmet_card_left">
+                                            <h6>Математика</h6>
+                                            <p>Пройдено карточек: 10 / 320</p>
+                                        </div>
+                                        <div class="pedmet_card_right">
+                                            <img src="../Images/читает(матиматика).svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <div class="pedmet_card">
+                                        <div class="pedmet_card_left">
+                                            <h6>Математика</h6>
+                                            <p>Пройдено карточек: 10 / 320</p>
+                                        </div>
+                                        <div class="pedmet_card_right">
+                                            <img src="../Images/читает(матиматика).svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="my_classmates">
+                        <div class="title">
+                            <h2>Мои предметы</h2>
+                            <a href="#">Смотреть предметы<img src="../Images/Arrow - Right.svg" alt="icon_right"></a>
+                        </div>
+                        <div class="my_classmates_card">
+                            <div class="row">
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334.svg" alt="">
+                                        <span>Маша</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334-1.svg" alt="">
+                                        <span>Жамшид</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334-2.svg" alt="">
+                                        <span>Маша</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334-3.svg" alt="">
+                                        <span>Маша</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334-4.svg" alt="">
+                                        <span>Маша</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                                    <div class="card_classmates">
+                                        <img src="../Images/Ellipse 2334-5.svg" alt="">
+                                        <span>Маша</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="my_teacher_homework">
+                        <div class="title">
+                            <h2>Задания от учителя</h2>
+                        </div>
+                        <div class="homework_text">
+                            <p>Новых заданий пока нет</p>
+                        </div>
+                        <a href="#" class="info">
+                            <img src="../Images/Message - 4.svg" alt="">
+                            Чат
+                        </a>
+                    </section>
+                </div>
+            </main>
+            <section id="footer">
+                <div class="container-xl">
+                    <div class="footer_bottom">
+                        <div class="left_footer_bottom">
+                            <span>Copyright © 2022 estudy</span>
+                            <span>Пользовательское соглашение</span>
+                            <span>Лицензионное соглашение</span>
+                        </div>
+                        <div class="right_footer_bottom">
+                            <img src="../Images/brand.svg" alt="brand">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="./index.js"></script>
+        <script>
+            const dropdownBtn = document.getElementById("btn_lang");
+            const dropdownMenu = document.getElementById("dropdown_lang");
+            const toggleArrow = document.getElementById("arrow");
+            
+            // Toggle dropdown function
+            const toggleDropdown = function () {
+                dropdownMenu.classList.toggle("show");
+                toggleArrow.classList.toggle("arrow");
+            };
+            
+            // Toggle dropdown open/close when dropdown button is clicked
+            dropdownBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                toggleDropdown();
+            });
+            
+            // Close dropdown when dom element is clicked
+            document.documentElement.addEventListener("click", function () {
+                if (dropdownMenu.classList.contains("show")) {
+                toggleDropdown();
+                }
+            });
+            
+        </script>
+        <script>
+            const dropdownBtn1 = document.getElementById("profile");
+            const dropdownMenu1 = document.getElementById("dropdown_profile");
+            const toggleArrow1 = document.getElementById("arrow1");
+            // Toggle dropdown function
+            const toggleDropdown1 = function () {
+                dropdownMenu1.classList.toggle("show1");
+                toggleArrow1.classList.toggle("arrow1");
+            };
+            
+            // Toggle dropdown open/close when dropdown button is clicked
+            dropdownBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                toggleDropdown1();
+            });
+            
+            // Close dropdown when dom element is clicked
+            document.documentElement.addEventListener("click", function () {
+                if (dropdownMenu1.classList.contains("show")) {
+                toggleDropdown1();
+                }
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
